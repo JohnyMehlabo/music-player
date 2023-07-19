@@ -41,6 +41,10 @@ content {
     display: inline-block;
 }
 
+.element-content:hover{
+    background-color: #060606;
+}
+
 .element-content > img {
     display: none;
 }

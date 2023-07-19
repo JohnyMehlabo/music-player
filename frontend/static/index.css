@@ -23,6 +23,9 @@ h1 {
     width : 5rem;
     height : 5rem;
 }
+#buttons img:hover {
+    opacity: 90%;
+}
 
 content {
     height: 100vh;

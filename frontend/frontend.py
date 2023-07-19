@@ -10,7 +10,7 @@ s.connect(("127.0.0.1", 4444))
 
 def getCurrentStatus():
     s.send("get_current_status".encode())
-    data = s.recv(1024).decode().split("-")
+    data = s.recv(1024).decode().split("¬")
     return (json.loads(data[0].replace("'", "\"")), int(data[1]))
 
 

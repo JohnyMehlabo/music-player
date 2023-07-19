@@ -52,7 +52,7 @@ def handleConnection(conn : socket.socket, addr):
                 is_playing = p.is_playing()
             else:
                 is_playing = 0
-            conn.send(f"{current_song}-{is_playing}".encode())
+            conn.send(f"{current_song}¬{is_playing}".encode())
         if command == "play":
             print("Command: play")
             song_id = int(args[0])

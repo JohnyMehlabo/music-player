@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+}
+
+#main-container {
+    border-radius: 1rem;
+    padding: 30px;
+    background-color:  #080808;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+        font-size: 4rem;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#buttons img {
+    width : 5rem;
+    height : 5rem;
+}
+
+body {
+    background-color:  #121212;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color : white;
+    font-family: 'Raleway', sans-serif;
+}

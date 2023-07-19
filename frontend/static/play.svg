@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="81.642563mm"
+   height="81.643074mm"
+   viewBox="0 0 81.642563 81.643074"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="play.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="264.29648"
+     inkscape:cy="215.95786"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-64.256025,-83.154614)">
+    <path
+       id="path833"
+       style="opacity:0.997;fill:#0c16ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.07874;stroke-linecap:round;paint-order:fill markers stroke;stop-color:#000000"
+       d="M 397.11328,314.28516 A 154.28572,154.28572 0 0 0 242.85742,468.57227 154.28572,154.28572 0 0 0 397.14258,622.85742 154.28572,154.28572 0 0 0 551.42773,468.57227 154.28572,154.28572 0 0 0 397.14258,314.28516 a 154.28572,154.28572 0 0 0 -0.0293,0 z m -48.89648,82.55664 65.66992,38.18359 65.66797,38.18164 -65.90039,37.78125 -65.90235,37.7793 0.23243,-75.96289 z"
+       transform="scale(0.26458333)" />
+  </g>
+</svg>

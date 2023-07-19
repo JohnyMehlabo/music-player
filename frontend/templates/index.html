@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    </style>        
+    <title>Music Player</title>
+</head>
+<body>
+    <div id="main-container">
+        <h1>Music Player</h1>
+        <h3>Currently Playing: {{ currentSong.name }}</h3>
+        <div id="buttons">
+            <a></a>
+            <a href="/pause">
+            {% if isPlaying == 1 %}
+                <img src="{{ url_for('static', filename='pause.svg') }}">
+            {% elif isPlaying == 0 %}
+            <img src="{{ url_for('static', filename='play.svg') }}">
+            {% endif %}
+            </svg></a>
+            <a></a>
+        </div>
+    </div>
+</body>
+</html>

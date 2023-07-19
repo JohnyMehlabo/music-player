@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="81.642563mm"
+   height="81.643074mm"
+   viewBox="0 0 81.642563 81.643074"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="pause.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-768.41627"
+     inkscape:cy="317.6006"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-33.787085,-86.762663)">
+    <path
+       id="path833"
+       style="opacity:0.997;fill:#0c16ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.07874;stroke-linecap:round;paint-order:fill markers stroke;stop-color:#000000"
+       d="m 281.95508,327.92188 c -85.19853,0.0166 -154.25663,69.08859 -154.25586,154.2871 3.1e-4,85.20919 69.07595,154.28486 154.28516,154.28516 85.2092,-3e-4 154.28485,-69.07597 154.28515,-154.28516 7.6e-4,-85.20996 -69.07519,-154.28681 -154.28515,-154.2871 z m 19.08789,62.84179 h 46.43164 v 175.08594 h -46.43164 z m -85.33985,0.84571 h 46.43165 v 175.08593 h -46.43165 z"
+       transform="scale(0.26458333)" />
+  </g>
+</svg>

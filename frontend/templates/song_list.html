@@ -1,3 +1,15 @@
-{% for song in songs %}
-<a href="/play?id={{ loop.index0 }}">{{ song.name }}</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs</title>
+</head>
+<body>
+    {% for song in songs %}
+<ul>
+    <li><a href="/play?id={{ loop.index0 }}">{{ song.name }}</a></li>
+</ul>
 {% endfor %}
+</body>
+</html>

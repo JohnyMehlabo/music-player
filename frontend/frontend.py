@@ -16,12 +16,10 @@ def getCurrentStatus():
 
 @app.route("/songs")
 def songs():
+    currentSong, _ = getCurrentStatus()
     s.send("get_songs".encode())
     data = json.loads(s.recv(4096).decode("utf-8"))
-    context = {
-        "songs" : data
-    }
-    return render_template("song_list.html", songs=data)
+    return render_template("song_list.html", songs=data, currentSong=currentSong)
 
 @app.route("/pause")
 def pause():
@@ -37,4 +35,8 @@ def index():
 def play_song():
     if request.args.get("id"):
         s.send(f"play {request.args.get('id')}".encode())
-    return "a"
+    if request.args.get("redirect_uri"):
+        redirect_uri = request.args.get("redirect_uri")
+    else:
+        redirect_uri = "/"
+    return redirect(redirect_uri)

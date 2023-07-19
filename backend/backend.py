@@ -1,6 +1,10 @@
 import vlc
 import socket
 import json
+from threading import Thread
+
+Ended = 6
+song_id = -1
 
 p : vlc.MediaPlayer = None
 
@@ -14,26 +18,32 @@ def playSong(id):
     p = vlc.MediaPlayer("songs/" + song_list[id]["filename"])
     p.play()
 
+def handleEnd():
+    try:
+        global song_id, p
+        while True:
+            if p:
+                current_state = p.get_state()
+            else:
+                current_state = - 1
+
+            if current_state == Ended:
+                song_id += 1
+                playSong(song_id)
+    except KeyboardInterrupt:
+        return
+
 def handleConnection(conn : socket.socket, addr):
     global p
-    song_id = -1
-    Ended = 6
     
     while True:
+        global song_id
         data = conn.recv(4096).decode()
         values = data.split(" ")
         command = values[0]
         args = values[1:]
 
-        if p:
-            current_state = p.get_state()
-        else:
-            current_state = - 1
-
-
-        if current_state == Ended:
-            song_id += 1
-            playSong(song_id)
+        
 
         if command == "get_current_status":
             print("Command: get_current_status")
@@ -64,12 +74,16 @@ s.bind(("127.0.0.1", 4444))
 s.listen(1)
 s.settimeout(0.5)
 
+h_t = Thread(target=handleEnd)
+h_t.start()
+
 try:
     while True:
         try:
             conn, addr = s.accept()
             print("Got Connection!")
-            handleConnection(conn, addr)
+            t = Thread(target=handleConnection, args=(conn, addr))
+            t.start()
         except socket.timeout:
             pass
 except KeyboardInterrupt:

@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Songs</title>
-</head>
-<body>
-    {% for song in songs %}
-<ul>
-    <li><a href="/play?id={{ loop.index0 }}">{{ song.name }}</a></li>
-</ul>
-{% endfor %}
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='song_list.css') }}">
+{% endblock %}
+
+{% block content %}
+<content>
+    <ul id="song-list">
+        {% for song in songs %}
+        {% if song.name != currentSong.name %}
+            <a href="/play?id={{ loop.index0 }}"><li><div class="element-content">{{ song.name }}<img src="{{ url_for('static', filename='play.svg') }}"></div></li></a>
+        {% else %}
+            <a href="/play?id={{ loop.index0 }}"><li><div class="current-element-content">{{ song.name }} - Currently Playing</div></li></a>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</content>
+{% endblock %}

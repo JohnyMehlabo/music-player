@@ -1,0 +1,52 @@
+#song-list {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.element-content {
+    background-color: #080808;
+    padding: 20px;
+    height: 3rem;
+    margin: 10px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.current-element-content {
+    background-color: #0c16ffff;
+    padding: 20px;
+    height: 3rem;
+    margin: 10px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.element-content:hover > img{
+    width : 3rem;
+    height : 3rem;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.element-content > img {
+    display: none;
+}
+
+ul > a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}

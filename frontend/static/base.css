@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color:  #121212;
+    margin: 0;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    background-color:  #080808;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav > * {
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > a:hover {
+    text-decoration: none;
+    color: lightgrey;
+}

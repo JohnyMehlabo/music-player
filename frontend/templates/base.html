@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    {% block head %}
+    {% endblock %}
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    </style>       
+    <script>
+        window.addEventListener( "pageshow", function ( event ) {
+        var historyTraversal = event.persisted || 
+                                ( typeof window.performance != "undefined" && 
+                                    window.performance.navigation.type === 2 );
+        if ( historyTraversal ) {
+            // Handle page restore.
+            window.location.reload();
+        }
+        });
+    </script>
+    <title>Music Player</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/songs">Songs</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

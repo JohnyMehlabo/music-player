@@ -21,7 +21,7 @@ def handleConnection(conn : socket.socket, addr):
             print("Command: play")
             if p:
                 p.stop()
-            p = vlc.MediaPlayer("songs\\" + song_list[int(args[0])]["filename"])
+            p = vlc.MediaPlayer("songs/" + song_list[int(args[0])]["filename"])
             p.play()
         if command == "stop":
             print("Command: play")

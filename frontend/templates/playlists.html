@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='playlists.css') }}">
+{% endblock %}
+
+{% block content %}
+<content>
+    <ul id="playlists">
+        {% for playlist in playlists %}
+            <a href="/play_playlist?id={{ loop.index0 }}">
+                <li>
+                    <div class="element-content">
+                        {{ playlist.name }}
+                        <img id="play" src="{{ url_for('static', filename='play.svg') }}">
+                    </div>
+                </li>
+            </a>
+        {% endfor %}
+    </ul>
+</content>
+{% endblock %}

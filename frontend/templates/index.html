@@ -2,6 +2,17 @@
 
 {% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+<script>
+    window.addEventListener( "pageshow", function ( event ) {
+    var historyTraversal = event.persisted || 
+                            ( typeof window.performance != "undefined" && 
+                                window.performance.navigation.type != 1 );
+    if ( historyTraversal ) {
+        // Handle page restore.
+        window.location.reload();
+    }
+    });
+</script>
 {% endblock %}
 
 {% block content %}
@@ -20,5 +31,17 @@
             <a></a>
         </div>
     </div>
+    {% if currentMode == 1 %}
+    <div id="playlist-container">
+        <h2>Queue:</h2>
+        {% for song in queue %}
+            {% if song != currentSong %}
+            <a href="/change_queue_index?index={{ loop.index0 }}"><div class="queue-item">{{ song.name }}</div></a>
+            {% else %}
+            <a href="/change_queue_index?index={{ loop.index0 }}"><div id="current-song" class="queue-item">{{ song.name }}</div></a>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
 </content>
 {% endblock %}
